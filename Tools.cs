@@ -8,6 +8,10 @@ namespace FirefoxMissingCertMimeTypePatcher
 {
     class Tools
     {
+		/*
+		 * Credits for this method for anirugu
+		 * https://gist.github.com/anirugu/7243142
+		 */
         public static string GetFirefoxProfilePath()
         {
             string apppath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
