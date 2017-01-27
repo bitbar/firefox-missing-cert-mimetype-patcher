@@ -5,9 +5,9 @@ It's simple C# application which fixes missing MIME Types for certificates in Mo
 Mozilla Firefox @ Windows has from long time (among others [Bug 956189](https://bugzilla.mozilla.org/show_bug.cgi?id=956189)) problem with correct resolving MIME Types of certificates selected to upload. Fix for this is pretty simple - all you need to do is to add proper entries in **mimeTypes.rdf** file which is located in user Firefox Profile directory.
 
 ### How to use
-1. Run **FirefoxMissingCertMimeTypePatcher.exe**
+1. Run **FirefoxMissingCertMimeTypePatcher.exe**  
 ![App window](https://raw.githubusercontent.com/bitbar/firefox-missing-cert-mimetype-patcher/master/doc/app-window.png)
-2. Click **Fix missing**
+2. Click **Fix missing**  
 ![App window](https://raw.githubusercontent.com/bitbar/firefox-missing-cert-mimetype-patcher/master/doc/app-done.png)
 3. Restart Firefox (if it's currently running)
 
