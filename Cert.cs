@@ -36,6 +36,8 @@ namespace FirefoxMissingCertMimeTypePatcher
                 return false;
             }
             string rdfText = Tools.GetMimeTypesRdfText();
+            rdfText = rdfText.Replace("  </RDF:Seq>", "    <RDF:li RDF:resource=\"urn:mimetype:" + this.mimeType + "\"/>\n"
++ "  </RDF:Seq>");
             rdfText = rdfText.Replace("</RDF:RDF>", "  <RDF:Description RDF:about=\"urn:mimetype:" + this.mimeType + "\"\n"
 + "                   NC:fileExtensions=\"" + this.ext + "\"\n"
 + "                   NC:description=\"Certificate (." + this.ext + ")\"\n"
